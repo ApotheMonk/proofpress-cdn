@@ -8,6 +8,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Solstice Roast — Copperleaf</title>
   <!-- PLANTED R09: no color-scheme meta / CSS pair -->
+  <style>
+    /* Mobile reflow — Gmail/Apple/Outlook.com honour media queries; the Word
+       engine ignores <style> entirely and keeps the 600px desktop table. */
+    @media only screen and (max-width: 620px) {
+      .card { width: 100% !important; }
+      .px { padding-left: 22px !important; padding-right: 22px !important; }
+      .stack { display: block !important; width: 100% !important; padding: 0 !important; }
+      .stack-gap { display: none !important; }
+      .stack-pad { padding-bottom: 26px !important; }
+      .m-full { width: 100% !important; max-width: 100% !important; }
+      .m-center { text-align: center !important; }
+      .bean-top { margin-bottom: -44px !important; width: 92px !important; }
+      .bean-md { width: 64px !important; margin-top: -34px !important; }
+      .bean-sm { width: 42px !important; margin-top: -18px !important; }
+    }
+  </style>
 </head>
 <body style="margin:0;padding:0;background-color:#F4F1EB;">
   <!-- preheader -->
@@ -22,14 +38,14 @@
   </table>
 
   <!-- card: PLANTED R10 — width attribute disagrees with style width -->
-  <table role="presentation" align="center" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;background-color:#FFFFFF;">
+  <table role="presentation" align="center" width="600" cellpadding="0" cellspacing="0" border="0" class="card" style="width:600px;background-color:#FFFFFF;">
 
     <!-- FLOATING BEAN — breaks the frame over the hero's top edge (the
          reference email's tennis-ball move). Negative margin is itself a
          render probe: modern clients overlap; Outlook stacks gracefully. -->
     <tr>
       <td align="right" style="padding:0 34px 0 0;">
-        <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-lg.png" width="132" alt="" style="width:132px;display:block;border:0;margin-bottom:-74px;position:relative;">
+        <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-lg.png" width="132" alt="" class="bean-top" style="width:132px;display:block;border:0;margin-bottom:-74px;position:relative;">
       </td>
     </tr>
 
@@ -37,7 +53,7 @@
          PLANTED R04 + R05: no width attribute, no alt -->
     <tr>
       <td>
-        <img alt="The Solstice Roast — Copperleaf" width="600" src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_231955_83d1cab5-3f1f-4bcd-997c-619ab991edbc.png" style="max-width:600px;display:block;border:0;">
+        <img alt="The Solstice Roast — Copperleaf" width="600" src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_231955_83d1cab5-3f1f-4bcd-997c-619ab991edbc.png" class="m-full" style="max-width:600px;display:block;border:0;">
       </td>
     </tr>
 
@@ -48,11 +64,11 @@
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td width="18%" align="right" style="padding:0;">
-              <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-md.png" width="92" alt="" style="width:92px;display:block;border:0;margin-top:-52px;position:relative;">
+              <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-md.png" width="92" alt="" class="bean-md" style="width:92px;display:block;border:0;margin-top:-52px;position:relative;">
             </td>
             <td width="58%">&nbsp;</td>
             <td width="24%" align="left" style="padding:0;">
-              <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-sm.png" width="58" alt="" style="width:58px;display:block;border:0;margin-top:-26px;position:relative;">
+              <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-sm.png" width="58" alt="" class="bean-sm" style="width:58px;display:block;border:0;margin-top:-26px;position:relative;">
             </td>
           </tr>
         </table>
@@ -61,18 +77,18 @@
 
     <!-- editorial copy — two columns, quiet -->
     <tr>
-      <td style="padding:44px 48px 8px 48px;">
+      <td class="px" style="padding:44px 48px 8px 48px;">
         <!-- first h1 (legitimate) -->
         <h1 style="font-family:Georgia,'Times New Roman',serif;font-weight:normal;font-size:26px;line-height:34px;mso-line-height-rule:exactly;letter-spacing:1px;color:#2B1D16;margin:0 0 22px 0;">A roast in its purest form</h1>
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td width="48%" valign="top" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:21px;color:#4A423A;padding-right:14px;">
+            <td width="48%" valign="top" class="stack stack-pad" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:21px;color:#4A423A;padding-right:14px;">
               Once a year, our roasters mark the turn of the season with a single-origin lot
               worth staying up for. Late-harvest cherries, honey process, and a roast curve
               we spent all winter arguing about.
             </td>
-            <td width="4%">&nbsp;</td>
-            <td width="48%" valign="top" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:21px;color:#4A423A;padding-left:14px;">
+            <td width="4%" class="stack-gap">&nbsp;</td>
+            <td width="48%" valign="top" class="stack" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:21px;color:#4A423A;padding-left:14px;">
               Defined by toasted fig, orange oil and a finish like brown butter, the Solstice
               lot embodies quiet precision from first light to last cup — roasted Tuesday,
               on your bench by the weekend.
@@ -94,13 +110,13 @@
     <!-- second full-width image — lifestyle -->
     <tr>
       <td style="padding:40px 0 0 0;">
-        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205144_6d9e718b-c080-4902-a646-a5fdba5426bf.png" width="600" alt="Pour-over brewing of the Solstice Roast" style="width:100%;max-width:600px;display:block;border:0;">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205144_6d9e718b-c080-4902-a646-a5fdba5426bf.png" width="600" alt="Pour-over brewing of the Solstice Roast" class="m-full" style="width:100%;max-width:600px;display:block;border:0;">
       </td>
     </tr>
 
     <!-- PLANTED R01 (second h1) + R02 (bare ampersand) -->
     <tr>
-      <td align="center" style="padding:40px 48px 6px 48px;">
+      <td align="center" class="px" style="padding:40px 48px 6px 48px;">
         <h2 style="font-family:Georgia,'Times New Roman',serif;font-weight:normal;font-size:22px;line-height:30px;mso-line-height-rule:exactly;letter-spacing:1px;color:#2B1D16;margin:0;">Beans &amp; Brews, done slowly</h2>
         <p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:21px;color:#4A423A;margin:12px 0 0 0;">
           Designed to move effortlessly from first light to late evening — two expressions of one lot.
@@ -113,15 +129,15 @@
          bgcolor attr is the graceful-degradation floor (Outlook shows flat
          terracotta; capable clients show the photo). -->
     <tr>
-      <td background="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205144_13902f7c-e531-479d-8717-cfb452e27aee.png" bgcolor="#B25E31" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205144_13902f7c-e531-479d-8717-cfb452e27aee.png');background-size:cover;background-position:center;padding:34px 48px 30px 48px;">
+      <td class="px" background="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205144_13902f7c-e531-479d-8717-cfb452e27aee.png" bgcolor="#B25E31" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205144_13902f7c-e531-479d-8717-cfb452e27aee.png');background-size:cover;background-position:center;padding:34px 48px 30px 48px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td width="48%" valign="top" align="center" bgcolor="#FFFFFF" style="padding:10px 10px 14px 10px;">
+            <td width="48%" valign="top" align="center" bgcolor="#FFFFFF" class="stack stack-pad" style="padding:10px 10px 14px 10px;">
               <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205132_d48f03ac-5f5f-4391-9e0a-a94f28fcb12c.png" width="222" alt="The Solstice Roast — filter bag" style="width:100%;max-width:222px;display:block;border:0;">
               <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#4A423A;margin:12px 0 0 0;">The Filter Cut</p>
             </td>
-            <td width="4%">&nbsp;</td>
-            <td width="48%" valign="top" align="center" bgcolor="#FFFFFF" style="padding:10px 10px 14px 10px;">
+            <td width="4%" class="stack-gap">&nbsp;</td>
+            <td width="48%" valign="top" align="center" bgcolor="#FFFFFF" class="stack" style="padding:10px 10px 14px 10px;">
               <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_231958_f5aae615-f063-4595-8467-2ee7b9d4abb4.png" width="222" alt="The Solstice Roast — whole bean bag with espresso cup" style="width:100%;max-width:222px;display:block;border:0;">
               <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#4A423A;margin:12px 0 0 0;">Whole Bean</p>
             </td>
@@ -132,7 +148,7 @@
 
     <!-- utility strip -->
     <tr>
-      <td style="padding:34px 48px 30px 48px;border-top:1px solid #E8E2D8;">
+      <td class="px" style="padding:34px 48px 30px 48px;border-top:1px solid #E8E2D8;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid #E8E2D8;">
           <tr>
             <td width="50%" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#7d766b;padding:10px 6px 10px 0;">Roasted Tuesday, shipped Wednesday.</td>
@@ -150,7 +166,7 @@
 
     <!-- footer — big serif wordmark, PLANTED R11: legal links rely on color:inherit -->
     <tr>
-      <td align="center" style="padding:36px 48px 40px 48px;border-top:1px solid #E8E2D8;">
+      <td align="center" class="px" style="padding:36px 48px 40px 48px;border-top:1px solid #E8E2D8;">
         <p style="font-family:Georgia,'Times New Roman',serif;font-size:30px;letter-spacing:6px;color:#2B1D16;margin:0 0 18px 0;">COPPERLEAF</p>
         <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:20px;color:#2B1D16;margin:0 0 10px 0;">
           <a href="https://example.com/story" style="text-decoration:underline;"><span style="color:#2B1D16;">Our story</span></a>
