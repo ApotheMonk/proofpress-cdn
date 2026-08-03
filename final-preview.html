@@ -17,8 +17,12 @@
       .stack { display: block !important; width: 100% !important; padding: 0 !important; }
       .stack-gap { display: none !important; }
       .stack-pad { padding-bottom: 26px !important; }
+      .stack-card { display: block !important; width: 100% !important; margin-bottom: 26px !important; }
       .m-full { width: 100% !important; max-width: 100% !important; }
       .m-center { text-align: center !important; }
+      .bean-top {  !important; width: 92px !important; }
+      .bean-md { width: 64px !important;  !important; }
+      .bean-sm { width: 42px !important;  !important; }
     }
   </style>
 </head>
@@ -30,16 +34,45 @@
   <!-- eyebrow / build stamp -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr><td align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#8a857d;padding:8px 0;">
-      BUILD PP7 &middot; Copperleaf editorial launch
+      BUILD PP2 &middot; Copperleaf editorial launch
     </td></tr>
   </table>
 
   <!-- card: PLANTED R10 — width attribute disagrees with style width -->
   <table role="presentation" align="center" width="600" cellpadding="0" cellspacing="0" border="0" class="card" style="width:600px;background-color:#FFFFFF;">
 
-        <tr>
+    <!-- FLOATING BEAN — breaks the frame over the hero's top edge (the
+         reference email's tennis-ball move). Negative margin is itself a
+         render probe: modern clients overlap; Outlook stacks gracefully. -->
+    <tr>
+      <td align="right" style="padding:0 34px 0 0;">
+        <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-lg.png" width="132" alt="" class="bean-top" style="width:132px;display:block;border:0;position:relative;">
+      </td>
+    </tr>
+
+    <!-- HERO — editorial image with baked-in typography (fashion-house pattern).
+         PLANTED R04 + R05: no width attribute, no alt -->
+    <tr>
       <td>
-        <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/hero-composed.png" width="600" alt="The Solstice Roast — Copperleaf editorial hero" class="m-full" style="width:100%;max-width:600px;display:block;border:0;">
+        <img alt="The Solstice Roast — Copperleaf" width="600" src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_231955_83d1cab5-3f1f-4bcd-997c-619ab991edbc.png" class="m-full" style="max-width:600px;display:block;border:0;">
+      </td>
+    </tr>
+
+    <!-- BOTTOM FLOATERS — two beans in different sizes overlapping the hero's
+         lower edge (transparency test over photograph + white ground). -->
+    <tr>
+      <td style="padding:0 0 0 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="18%" align="right" style="padding:0;">
+              <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-md.png" width="92" alt="" class="bean-md" style="width:92px;display:block;border:0;position:relative;">
+            </td>
+            <td width="58%">&nbsp;</td>
+            <td width="24%" align="left" style="padding:0;">
+              <img src="https://raw.githubusercontent.com/ApotheMonk/proofpress-cdn/main/bean-sm.png" width="58" alt="" class="bean-sm" style="width:58px;display:block;border:0;position:relative;">
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
 
@@ -100,12 +133,12 @@
       <td class="px" background="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205144_13902f7c-e531-479d-8717-cfb452e27aee.png" bgcolor="#B25E31" style="background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205144_13902f7c-e531-479d-8717-cfb452e27aee.png');background-size:cover;background-position:center;padding:34px 48px 30px 48px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td width="48%" valign="top" align="center" bgcolor="#FFFFFF" class="stack stack-pad" style="padding:10px 10px 14px 10px;">
+            <td width="48%" valign="top" align="center" bgcolor="#FFFFFF" class="stack-card" style="padding:10px 10px 14px 10px;">
               <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_205132_d48f03ac-5f5f-4391-9e0a-a94f28fcb12c.png" width="222" alt="The Solstice Roast — filter bag" style="width:100%;max-width:222px;display:block;border:0;">
               <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#4A423A;margin:12px 0 0 0;">The Filter Cut</p>
             </td>
             <td width="4%" class="stack-gap">&nbsp;</td>
-            <td width="48%" valign="top" align="center" bgcolor="#FFFFFF" class="stack" style="padding:10px 10px 14px 10px;">
+            <td width="48%" valign="top" align="center" bgcolor="#FFFFFF" class="stack-card" style="padding:10px 10px 14px 10px;">
               <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HDrCcs7tS0vSbazWL7P7Nj1LWX/hf_20260802_231958_f5aae615-f063-4595-8467-2ee7b9d4abb4.png" width="222" alt="The Solstice Roast — whole bean bag with espresso cup" style="width:100%;max-width:222px;display:block;border:0;">
               <p style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#4A423A;margin:12px 0 0 0;">Whole Bean</p>
             </td>
